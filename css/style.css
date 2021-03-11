@@ -1,0 +1,247 @@
+@import url(https://fonts.googleapis.com/css?family=Great+Vibes:regular);
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  line-height: 1.42857;
+  color: #333333;
+}
+
+.frech-food__containe {
+  max-width: 1140px;
+}
+
+.header {
+  width: 100%;
+  color: #111111;
+  background-color: #e3effb;
+  border-bottom: 3px solid #fff;
+}
+
+.u-svg-content {
+  fill: #61a734;
+  width: 25px;
+}
+
+.navbar-toggler {
+  outline: none !important;
+}
+
+.nav-item .nav-link {
+  color: #61a734;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.nav-item .nav-link:hover {
+  color: #3c6821;
+  text-decoration: underline;
+}
+
+.navbar-brand {
+  max-width: 254px;
+  max-height: 254px;
+}
+
+.frech-food {
+  background-color: #e3effb;
+  background-image: url("../images/bg3.png");
+}
+
+.col--left {
+  padding: 30px 80px !important;
+}
+
+.col--right {
+  background-image: url("../images/1.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 630px;
+}
+
+.frech-food__subtitle {
+  font-weight: bold;
+  font-size: 1.75rem;
+  text-transform: uppercase;
+  line-height: 1.2;
+  margin: 0 0 0 131px;
+  color: #61a734 !important;
+}
+
+.frech-food__title {
+  font-size: 6rem;
+  line-height: 0.8;
+  font-weight: 300;
+  margin: -11px 0 0;
+  color: #ff5a00 !important;
+  font-family: "Great Vibes";
+}
+
+.frech-food__text {
+  font-style: italic;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.6;
+  margin: 14px 0 0;
+}
+
+.organic-btn {
+  font-family: "Open Sans", sans-serif;
+  display: block;
+  margin: 28px auto 0 0;
+  padding: 19px 59px 20px !important;
+  color: #ffffff !important;
+  background-color: #61a734 !important;
+  font-size: 0.875rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.organic-btn:hover {
+  background-color: #57962f !important;
+}
+
+.works {
+  background-color: #61a734;
+  color: #fff;
+}
+
+.works .frech-food_icon {
+  width: 47px;
+  height: 47px;
+  margin-bottom: 10px;
+}
+
+.works .frech-food_icon svg {
+  fill: #61a734;
+  width: 100%;
+}
+
+.works .works__title {
+  padding: 60px 40px 25px 40px;
+}
+
+.works .works__title h1 {
+  font-weight: 400;
+  font-size: 3rem;
+  margin: 20px 0;
+}
+
+.works .works__title p {
+  font-style: italic;
+  font-size: 1.3rem;
+}
+
+.works .row {
+  padding: 31px 0 70px 0;
+}
+
+.works .row > div {
+  margin-bottom: 25px !important;
+}
+
+.works .works__col {
+  min-height: 332px;
+  color: #333;
+}
+
+.works .works__col p {
+  font-style: italic;
+  margin: 20px 31px 30px;
+  font-weight: 400;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+.works .bg-1,
+.works .bg-2,
+.works .bg-3 {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.works .bg-1 {
+  background-image: url("../images/2.jpeg");
+}
+
+.works .bg-2 {
+  background-image: url("../images/3.jpeg");
+}
+
+.works .bg-3 {
+  background-image: url("../images/4.jpeg");
+}
