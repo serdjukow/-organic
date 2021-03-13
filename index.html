@@ -8,7 +8,6 @@
 	<link rel="icon" href="favicon.png">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
 		integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-		
 	<link rel="stylesheet" href="css/style.css">
 	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"
 		integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi"
@@ -16,12 +15,17 @@
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js"
 		integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG"
 		crossorigin="anonymous"></script>
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
 </head>
 
 <body>
 	<header class="header">
 		<div class="container">
-			<nav class="navbar navbar-expand-lg">
+			<nav id="navbar-example" class="navbar navbar-expand-lg" role="navigation">
 				<div class="container-fluid">
 					<a class="navbar-brand" href="#">
 						<img class="img-fluid" src="images/logo.png" alt="logo">
@@ -57,26 +61,30 @@
 						</span>
 					</button>
 					<div class="collapse navbar-collapse" id="navbarSupportedContent">
-						<ul class="navbar-nav me-auto mb-2 mb-lg-0 ml-auto">
+						<ul class="nav nav-tabs navbar-nav me-auto mb-2 mb-lg-0 ml-auto" role="tablist">
 							<li class="nav-item">
-								<a class="nav-link active" aria-current="page" href="#">Home</a>
+								<a class="nav-link active" data-nav-section="home" aria-current="page" href="#">Home</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="#">Link</a>
+								<a class="nav-link" data-nav-section="works" href="#works">Works</a>
 							</li>
-							<li class="nav-item dropdown">
-								<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-									data-bs-toggle="dropdown" aria-expanded="false">
-									Dropdown
-								</a>
-								<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-									<li><a class="dropdown-item" href="#">Action</a></li>
-									<li><a class="dropdown-item" href="#">Another action</a></li>
-									<li>
-										<hr class="dropdown-divider">
-									</li>
-									<li><a class="dropdown-item" href="#">Something else here</a></li>
-								</ul>
+							<li class="nav-item">
+								<a class="nav-link" data-nav-section="promise" href="#promise">Promise</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" data-nav-section="about" href="#about">About</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" data-nav-section="animals" href="#animals">Animals</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" data-nav-section="food" href="#food">Food</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" data-nav-section="farm" href="#farm">Farm</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" data-nav-section="contakt" href="#contakt">Kontakt</a>
 							</li>
 						</ul>
 					</div>
@@ -85,40 +93,42 @@
 		</div>
 	</header>
 
-	<section class="frech-food">
-		<div class="container frech-food__container">
+<div class="page" data-spy="scroll" data-target="#navbar-example" data-offset="105" tabindex="0">
+	<section id="#" data-section="home" class="fresh-food">
+		<div class="container">
 			<div class="row">
-				<div class="col col--left d-flex flex-md-column align-items-start  justify-content-center">
-					<h3 class="frech-food__subtitle">fresh food</h3>
-					<h1 class="frech-food__title">Organic</h1>
-					<p class="frech-food__text">How your food is grown or raised can have a major impact on your mental
+				<div class="col col-12 col-md-6 col--left organic-title">
+					<h3 class="organic-title__h3">fresh food</h3>
+					<h1 class="organic-title__h1">Organic</h1>
+					<p class="organic-title__p">How your food is grown or raised can have a major impact on your mental
 						and emotional health as well as the environment.</p>
-					<button type="button" class="btn organic-btn">learn more</button>
+					<button type="button" class="btn organic-title__button">learn more</button>
 				</div>
-				<div class="col col--right">
+				<div class="col col-12 col-md-6 col--right">
 				</div>
 			</div>
 		</div>
 	</section>
 
-	<section class="works">
+	<section id="works" data-section="works" class="works">
 		<div class="container">
-			<div class="col works__title text-center">
-				<h1>How It Works?</h1>
-				<p>Organic agriculture, which is governed by strict government standards, requires that products bearing
+			<div class="works__top row justify-content-center block-title">
+				<h1 class="block-title__h1">How It Works?</h1>
+				<p class="block-title__p">Organic agriculture, which is governed by strict government standards,
+					requires that products bearing
 					the organic label are produced without the use of toxic and persistent pesticides and synthetic
 					nitrogen fertilizers, antibiotics, synthetic hormones, genetic engineering or other excluded
 					practices, sewage sludge, or irradiation.</p>
 			</div>
 
-			<div class="row row-cols-2 row-cols-lg-3 g-2 g-lg-3">
-				<div class="col col-re">
+			<div class="row">
+				<div class="col">
 					<div class="works__col bg-1 d-flex flex-md-column align-items-center justify-content-center">
 					</div>
 				</div>
-				<div class="col">
+				<div class="col-sm-12 col-md-6 col-lg-4">
 					<div class="works__col bg-white d-flex flex-md-column align-items-center justify-content-center">
-						<span class="frech-food_icon">
+						<span class="fresh-food_icon">
 							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 384.00289" id="svg-a084"
 								class="u-svg-content">
 								<path
@@ -131,13 +141,13 @@
 							soil fertility, and use less energy, is also better for birds</p>
 					</div>
 				</div>
-				<div class="col">
+				<div class="col-sm-12 col-md-6 col-lg-4">
 					<div class="works__col bg-2 d-flex flex-md-column align-items-center justify-content-center">
 					</div>
 				</div>
-				<div class="col">
+				<div class="col-sm-12 col-md-6 col-lg-4">
 					<div class="works__col bg-white d-flex flex-md-column align-items-center justify-content-center">
-						<span class="frech-food_icon">
+						<span class="fresh-food_icon">
 							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
 								version="1.1" id="svg-fdcc" x="0px" y="0px" viewBox="0 0 512 512"
 								style="enable-background:new 0 0 512 512;" xml:space="preserve" class="u-svg-content">
@@ -191,12 +201,12 @@
 							organic with their distinct characteristics</p>
 					</div>
 				</div>
-				<div class="col">
+				<div class="col-sm-12 col-md-6 col-lg-4">
 					<div class="works__col bg-3 d-flex flex-md-column align-items-center justify-content-center"></div>
 				</div>
-				<div class="col">
+				<div class="col-sm-12 col-md-6 col-lg-4">
 					<div class="works__col bg-white d-flex flex-md-column align-items-center justify-content-center">
-						<span class="frech-food_icon">
+						<span class="fresh-food_icon">
 							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -46 512 512" id="svg-bd9a"
 								class="u-svg-content">
 								<path
@@ -218,11 +228,231 @@
 							conventionally-grown counterparts and people with allergies to foods</p>
 					</div>
 				</div>
-			</div>
 
+			</div>
+	</section>
+
+	<section id="promise" data-section="promise" class="organic-farm">
+		<div class="row organic-farm__container">
+			<div class="col-12 col-md-6 col-left">
+
+			</div>
+			<div class="col-12 col-sm-12 col-md-6 col-right">
+				<div class="organic-title">
+					<h3 class="organic-title__h3">ORGANIC FARM</h3>
+					<h2 class="organic-title__h2">Our Promise</h2>
+					<p class="organic-title__p">We bring the season’s best mix of organic produce and hand-crafted farm
+						products conveniently to your door by growing and partnering with local farms and artisans in
+						your area.</p>
+					<button type="button" class="btn organic-title__button btn--orange">learn more</button>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="about" data-section="about" class="our-farm">
+		<div class="our-farm__top">
+			<div class="container">
+				<div class="row justify-content-center block-title">
+					<h1 class="block-title__h1">About Our Farm</h1>
+					<p class="block-title__p">Today, at our second-generation family farm, we keep with our parents’
+						vision
+						by practicing healthy crop rotation, encouraging a diverse ecosystem around the fields,
+						efficiently
+						using local water sources and carefully selecting produce varieties that grow well and taste
+						great.
+					</p>
+				</div>
+			</div>
+			<div class="container overflow-hidden">
+				<div class="row gy-5">
+					<div class="col col-12 col-md-6 col-lg-3">
+						<div class="p-3 bg-white">
+							<h4>VEGETABLES</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+						</div>
+					</div>
+					<div class="col col-12 col-md-6 col-lg-3">
+						<div class="p-3 bg-white">
+							<h4>HOW IT WORKS</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+						</div>
+					</div>
+					<div class="col col-12 col-md-6 col-lg-3">
+						<div class="p-3 bg-white">
+							<h4>FLEXIBILITY</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+						</div>
+					</div>
+					<div class="col col-12 col-md-6 col-lg-3">
+						<div class="p-3 bg-white">
+							<h4>FARM PRODUCTS</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="our-farm__bottom">
+			<div class="container overflow-hidden">
+				<div class="row gy-5">
+					<div class="col col-12 col-md-6 col-lg-3">
+						<div class="p-3 our-farm_bg-1">
+						</div>
+					</div>
+					<div class="col col-12 col-md-6 col-lg-3">
+						<div class="p-3 our-farm_bg-2">
+						</div>
+					</div>
+					<div class="col col-12 col-md-6 col-lg-3">
+						<div class="p-3 our-farm_bg-3">
+						</div>
+					</div>
+					<div class="col col-12 col-md-6 col-lg-3">
+						<div class="p-3 our-farm_bg-4">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="animals" data-section="animals" class="happy-farmig">
+		<div class="row justify-content-md-around">
+			<div class="happy-farmig__left col-12 col-md-6 happy-farmig__col">
+			</div>
+			<div class="happy-farmig__right col-12 col-md-6 happy-farmig__col">
+				<div class="organic-title">
+					<h3 class="organic-title__h3">HAPPY FARMING</h3>
+					<h2 class="organic-title__h2">Happy Animals</h2>
+					<p class="organic-title__p">The idea that happier farm animals produce higher quality food is
+						not new, and it seems to be catching on. Several small scale egg farmers have transitioned
+						to a “pastured” system, allowing their chickens to roam freely to eat grass and bugs the way
+						nature intended. These chickens are not simply “free range” or “cage free,” which are terms
+						that unfortunately don’t have much meaning in today’s food market</p>
+					<button type="button" class="btn organic-title__button btn--orange">learn more</button>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="food" data-section="food" class="organic-card">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-md-6 col-lg-4 mb-2 mb-lg-0 d-flex">
+					<div class="card text-center">
+						<div class="card-body">
+							<img class="rounded-circle img-fluid w-75" src="images/5.jpeg" alt="">
+						</div>
+						<div class="card-body">
+							<h5>Fresh Fruits</h5>
+							<p>The secret is using fresh, seasonal produce in combination with good quality oils,
+								vinegars
+								or
+								dairy. We choose the organic lifestyle because</p>
+							<a class="organic-link" href="http://">learn more</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-6 col-lg-4 mb-2 mb-lg-0 d-flex">
+					<div class="card text-center">
+						<div class="card-body">
+							<img class="rounded-circle img-fluid w-75" src="images/6.jpeg" alt="">
+						</div>
+
+						<div class="card-body">
+							<h5>Vegetables</h5>
+							<p>We have all been listening to our mothers saying: eat your vegetables. Scientists also
+								agree: we need to eat 5 portions of vegetables to stay healthy.</p>
+							<a class="organic-link" href="http://">learn more</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-6 col-lg-4 d-flex">
+					<div class="card text-center">
+						<div class="card-body">
+							<img class="rounded-circle img-fluid w-75" src="images/7.jpeg" alt="">
+						</div>
+
+						<div class="card-body">
+							<h5>Salad Leaves</h5>
+							<p>One way to motivate yourself to eat more salad this summer is to have a tasty, homemade
+								dressing drizzled on top. Organic food popularity</p>
+							<a class="organic-link" href="http://">learn more</a>
+						</div>
+					</div>
+				</div>
+
+
+			</div>
+		</div>
 
 	</section>
 
+	<section id="farm" data-section="farm" class="of-organic-food">
+		<div class="row justify-content-md-around">
+			<div class="of-organic-food__left col-12 col-md-6 happy-farmig__col">
+				<div class="organic-title">
+					<h3 class="organic-title__h3">ORGANIC FARM</h3>
+					<h2 class="organic-title__h2">Of Organic Food</h2>
+					<p class="organic-title__p">Organic principles and regulations are also designed to ensure that
+						animals are treated humanely, or, to be brutally honest, as humanely as possible.
+						There are strict rules on the way in which animals are housed, guaranteeing a degree of comfort
+						for the animals. But when it comes to vegetables, the situation is quite different.</p>
+					<button type="button" class="btn organic-title__button btn--orange">learn more</button>
+				</div>
+			</div>
+			<div class="of-organic-food__right col-12 col-md-6 of-organic-food__col">
+			</div>
+		</div>
+	</section>
+
+	<section id="contakt" data-section="contakt" class="organic-map">
+		<div class="row justify-content-md-around">
+			<div class="col-12 col-md-6 organic-map__col">
+				<div class="organic-map__left">
+					<!--Google map-->
+					<div id="map-container-google-2" class="z-depth-1-half map-container" style="height: 500px">
+
+						<iframe
+							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2428.1070362699597!2d13.386309052082414!3d52.51340197971387!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a851dab75229a9%3A0x56dcd4189c8a82af!2z0KDQvtGB0YHQuNC50YHQutC40Lkg0JTQvtC8INCd0LDRg9C60Lgg0Lgg0JrRg9C70YzRgtGD0YDRiw!5e0!3m2!1sru!2sde!4v1615562518073!5m2!1sru!2sde"
+							frameborder="0" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+					</div>
+					<!--Google Maps-->
+				</div>
+			</div>
+
+			<div class="col-12 col-md-6 organic-map__col">
+				<div class="organic-map__right">
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer class="footer">
+		<div class="footer__top text-center">
+			<span class="u-small-text u-text u-text-variant u-text-1">Sample footer text</span>
+		</div>
+		<div class="footer__bottom d-flex justify-content-center">
+			<a class="u-link" href="##" target="_blank">
+				<span>Website Templates</span>
+			</a>
+			<span class="u-text">
+				<span>created with</span>
+			</span>
+			<a class="u-link" href="##" target="_blank">
+				<span>Serdgej Serdjukow</span>
+			</a>
+		</div>
+	</footer>
+</div>
+
+	<a id="back-to-top" href="#" class="btn btn-light btn-lg back-to-top" role="button">
+		<i class="bi bi-chevron-up"></i>
+	</a>
 
 	<script src="js/script.js"></script>
 </body>
