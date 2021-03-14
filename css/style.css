@@ -146,21 +146,21 @@ p {
 }
 
 .organic-title__h1 {
+  font-family: "Great Vibes";
   font-size: 6rem;
   line-height: 0.8;
   font-weight: 300;
   margin: -11px 0 0;
   color: #ff5a00;
-  font-family: "Great Vibes";
 }
 
 .organic-title__h2 {
+  font-family: "Great Vibes";
   font-size: 4.375rem;
   line-height: 1.6;
   font-weight: 300;
   margin: -11px 0 0;
   color: #ff5a00;
-  font-family: "Great Vibes";
 }
 
 .organic-title__p {
@@ -200,6 +200,22 @@ p {
 
 .organic-title .btn--orange:hover {
   background-color: #c24603;
+}
+
+@media (max-width: 390px) {
+  .organic-title__h1 {
+    font-size: 5rem;
+    line-height: 0.8;
+  }
+  .organic-title__h2 {
+    font-size: 3.375rem;
+    line-height: 1.6;
+  }
+  .organic-title__h3 {
+    font-size: 1.35rem;
+    line-height: 1.2;
+    margin: 0 0 0 90px;
+  }
 }
 
 .block-title {
@@ -258,6 +274,7 @@ p {
 }
 
 .nav-item .nav-link {
+  font-size: 1.2rem;
   color: #61a734;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
@@ -267,23 +284,15 @@ p {
           user-select: none;
 }
 
-.nav-item .nav-link:hover {
+.nav-item .nav-link:focus, .nav-item .nav-link:active, .nav-item .nav-link:hover {
   color: #2e4e19 !important;
   border-bottom: 1px solid #2e4e19 !important;
-}
-
-.nav-item .nav-link:active {
-  color: #2e4e19 !important;
-  border-bottom: 1px solid #2e4e19 !important;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
 }
 
 .nav-tabs {
   border-color: transparent !important;
-}
-
-.nav-tabs .nav-link {
-  border-top-left-radius: 0.25rem;
-  border-top-right-radius: 0.25rem;
 }
 
 .active {
@@ -296,8 +305,8 @@ p {
 }
 
 .navbar-brand {
-  max-width: 254px;
-  max-height: 254px;
+  max-width: 234px;
+  max-height: 234px;
 }
 
 @media (max-width: 764px) {
@@ -315,7 +324,7 @@ p {
 }
 
 .fresh-food {
-  padding-top: 105px;
+  padding-top: 98px;
   background-color: #e3effb;
   background-image: url("../images/bg3.png");
 }
@@ -360,7 +369,7 @@ p {
 }
 
 .organic-farm .col-left {
-  background-image: url(../images/bg6.jpg);
+  background-image: url("../images/bg6.jpg");
   background-position: 0% 50%;
   min-height: 630px;
 }
@@ -385,10 +394,19 @@ p {
 
 @media (max-width: 917px) {
   .organic-farm .col-left {
-    min-height: 630px;
+    min-height: 530px;
   }
   .organic-farm .col-right {
-    min-height: 630px;
+    min-height: 530px;
+  }
+}
+
+@media (max-width: 768px) {
+  .organic-farm .col-left {
+    min-height: 430px;
+  }
+  .organic-farm .col-right {
+    min-height: 430px;
   }
 }
 
@@ -537,7 +555,6 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  min-height: 630px;
 }
 
 .happy-farmig__left {
@@ -549,12 +566,30 @@ p {
 
 .happy-farmig__right {
   background-color: #fff;
-  margin: 50px auto;
+  margin: 0px auto;
+}
+
+@media (max-width: 917px) {
+  .happy-farmig__left {
+    min-height: 530px;
+  }
+}
+
+@media (max-width: 768px) {
+  .happy-farmig__left {
+    min-height: 430px;
+  }
 }
 
 .organic-card {
   background-color: #e3effb;
   padding: 50px 0 80px 0;
+}
+
+@media (max-width: 768px) {
+  .organic-card {
+    padding: 30px 0 40px 0;
+  }
 }
 
 .of-organic-food__col {
@@ -569,11 +604,11 @@ p {
 
 .of-organic-food__left {
   background-color: #fff;
-  margin: 50px auto;
+  margin: 0px auto;
 }
 
 .of-organic-food__right {
-  background-image: url(../images/12.jpeg);
+  background-image: url("../images/12.jpeg");
   background-position: 50% 50%;
   width: 100%;
   min-height: 630px;
@@ -616,7 +651,19 @@ p {
 
 .footer__top {
   padding: 40px 10px;
-  font-size: 1rem;
+  font-size: 2rem;
+}
+
+.footer__top a {
+  display: inline-block;
+  margin: 0 10px;
+  color: #fff;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
+.footer__top a:hover {
+  color: #61a734;
 }
 
 .footer__bottom {
@@ -634,6 +681,22 @@ p {
 .footer__bottom .u-link:hover {
   text-decoration: none;
   color: #a1a1a1;
+}
+
+@media (max-width: 390px) {
+  .footer__top {
+    padding: 20px 10px;
+  }
+  .footer__bottom {
+    padding: 20px 10px;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .back-to-top {
