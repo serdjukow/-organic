@@ -84,34 +84,7 @@ body {
   font-size: 14px;
   line-height: 1.42857;
   color: #333333;
-}
-
-.fh5co-home {
-  padding-top: 50px;
-  height: 500px;
-  color: #fff;
-  background-color: #1e88e5;
-}
-
-.fh5co-services {
-  padding-top: 50px;
-  height: 500px;
-  color: #fff;
-  background-color: #673ab7;
-}
-
-.fh5co-explore {
-  padding-top: 50px;
-  height: 500px;
-  color: #fff;
-  background-color: #ff9800;
-}
-
-.fh5co-project {
-  padding-top: 50px;
-  height: 500px;
-  color: #fff;
-  background-color: #00bcd4;
+  overflow-y: scroll;
 }
 
 h4 {
@@ -411,6 +384,7 @@ p {
 }
 
 .works {
+  padding-top: 75px;
   padding-bottom: 80px;
   background-color: #61a734;
   color: #fff;
@@ -425,10 +399,6 @@ p {
 .works .fresh-food_icon svg {
   fill: #61a734;
   width: 100%;
-}
-
-.works__top {
-  padding-top: 50px;
 }
 
 .works .row > div {
@@ -494,7 +464,7 @@ p {
 }
 
 .our-farm__top {
-  padding-top: 50px;
+  padding-top: 75px;
   color: #ffffff;
   background-color: #61a734;
 }
@@ -558,7 +528,7 @@ p {
 }
 
 .happy-farmig__left {
-  background-image: url(https://images01.nicepage.io/6a/b4/6ab497a3c47d1fa15b0f9d66fd01fe09.jpeg);
+  background-image: url("../images/13.jpeg");
   background-position: 50% 50%;
   width: 100%;
   min-height: 630px;

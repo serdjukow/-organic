@@ -1,0 +1,563 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,regular,italic,600,600italic,700,700italic,800,800italic);
+@import url(https://fonts.googleapis.com/css?family=Great+Vibes:regular);
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css");
+
+@import "_nullstyle";
+
+html {
+	scroll-behavior: smooth;
+}
+body {
+	position: relative;
+	font-family: "Open Sans", sans-serif;
+	font-size: 14px;
+	line-height: 1.42857;
+	color: #333333;
+	overflow-y: scroll;
+}
+
+h4 {
+	font-size: 24px;
+	font-weight: 300;
+}
+h5 {
+	font-size: 22px;
+}
+
+p {
+	font-style: italic;
+	font-weight: 400;
+	line-height: 1.6;
+	font-size: 16px;
+}
+
+.organic-title {
+	max-width: 490px;
+	padding: 30px 15px;
+	margin: 0 auto;
+	// .organic-title__h3
+
+	&__h3 {
+		font-weight: bold;
+		font-size: 1.75rem;
+		text-transform: uppercase;
+		line-height: 1.2;
+		margin: 0 0 0 131px;
+		color: #61a734 !important;
+	}
+
+	// .organic-title__h1
+
+	&__h1 {
+		font-family: "Great Vibes";
+		font-size: 6rem;
+		line-height: 0.8;
+		font-weight: 300;
+		margin: -11px 0 0;
+		color: #ff5a00;
+	}
+
+	&__h2 {
+		font-family: "Great Vibes";
+		font-size: 4.375rem;
+		line-height: 1.6;
+		font-weight: 300;
+		margin: -11px 0 0;
+		color: #ff5a00;
+	}
+
+	// .organic-title__p
+
+	&__p {
+		font-style: italic;
+		font-size: 1.4rem;
+		font-weight: 400;
+		line-height: 1.6;
+		margin: 14px 0 0;
+	}
+
+	// .organic-title__button
+
+	&__button {
+		font-family: "Open Sans", sans-serif;
+		display: block;
+		margin: 28px auto 0 0;
+		padding: 14px 44px 15px;
+		color: #ffffff;
+		background-color: #61a734;
+		font-size: 0.875rem;
+		font-weight: bold;
+		line-height: 1.4;
+		letter-spacing: 1px;
+		text-transform: uppercase;
+		user-select: none;
+		&:hover {
+			background-color: #57962f;
+			color: #ffffff;
+		}
+	}
+
+	.btn--orange {
+		background-color: #ff5a00;
+		&:hover {
+			background-color: #c24603;
+		}
+	}
+	@media (max-width: 390px) {
+		&__h1 {
+			font-size: 5rem;
+			line-height: 0.8;
+		}
+
+		&__h2 {
+			font-size: 3.375rem;
+			line-height: 1.6;
+		}
+		&__h3 {
+			font-size: 1.35rem;
+			line-height: 1.2;
+			margin: 0 0 0 90px;
+		}
+	}
+}
+
+.block-title {
+	padding: 0px 10px 25px 10px;
+	// .block-title__h1
+	&__h1 {
+		font-weight: 400;
+		font-size: 3rem;
+		margin: 20px 0;
+	}
+	// .block-title__p
+	&__p {
+		font-style: italic;
+		font-size: 1.3rem;
+		text-align: center;
+	}
+}
+
+.organic-link {
+	display: inline-block;
+	color: inherit;
+	font-size: 1rem;
+	letter-spacing: 1px;
+	border-style: none none solid;
+	text-transform: uppercase;
+	border-bottom: 1px solid #333;
+	font-weight: 600;
+	margin: 20px auto 0;
+	padding: 5px 0;
+	transition: all 0.3s;
+	&:hover {
+		color: #61a734;
+		border-bottom: 1px solid #61a734;
+	}
+}
+
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	width: 100%;
+	background-color: #e3effb;
+	border-bottom: 3px solid #fff;
+}
+
+.u-svg-content {
+	fill: #61a734;
+	width: 25px;
+}
+
+.navbar-toggler {
+	outline: none !important;
+}
+
+.nav-item {
+	.nav-link {
+		font-size: 1.2rem;
+		color: #61a734;
+		transition: all 0.3s;
+		user-select: none;
+		&:focus,
+		&:active,
+		&:hover {
+			color: #2e4e19 !important;
+			border-bottom: 1px solid #2e4e19 !important;
+			border-top-left-radius: 0.25rem;
+			border-top-right-radius: 0.25rem;
+		}
+	}
+}
+.nav-tabs {
+	border-color: transparent !important;
+}
+.active {
+	color: #2e4e19 !important;
+	background-color: transparent !important;
+	border-color: transparent !important;
+	border-bottom: 1px solid #2e4e19 !important;
+	border-top-left-radius: 0.25rem;
+	border-top-right-radius: 0.25rem;
+}
+.navbar-brand {
+	max-width: 234px;
+	max-height: 234px;
+	@media (max-width: 764px) {
+		& {
+			max-width: 204px;
+			max-height: 204px;
+		}
+	}
+	@media (max-width: 576px) {
+		& {
+			max-width: 170px;
+			max-height: 170px;
+		}
+	}
+}
+
+.fresh-food {
+	padding-top: 98px;
+	background-color: #e3effb;
+	background-image: url("../images/bg3.png");
+}
+.col--left {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.col--right {
+	background-image: url("../images/1.jpeg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 630px;
+	vertical-align: middle;
+}
+@media (max-width: 991px) {
+	.col--left {
+		.frech-food__subtitle {
+			margin: 0 0 0 100px;
+		}
+	}
+	.col--right {
+		min-height: 430px;
+	}
+}
+
+.organic-farm {
+	background-color: #f2f2f2;
+	&__container {
+		margin: 0 auto;
+	}
+	.col-left {
+		background-image: url("../images/bg6.jpg");
+		background-position: 0% 50%;
+		min-height: 630px;
+	}
+	.col-right {
+		display: flex;
+		align-items: center;
+		background-color: #fff;
+		min-height: 630px;
+		width: 100%;
+	}
+
+	@media (max-width: 1150px) {
+		&__container {
+			width: 100%;
+		}
+	}
+	@media (max-width: 917px) {
+		.col-left {
+			min-height: 530px;
+		}
+		.col-right {
+			min-height: 530px;
+		}
+	}
+	@media (max-width: 768px) {
+		.col-left {
+			min-height: 430px;
+		}
+		.col-right {
+			min-height: 430px;
+		}
+	}
+}
+
+.works {
+	padding-top: 75px;
+	padding-bottom: 80px;
+	background-color: #61a734;
+	color: #fff;
+	.fresh-food_icon {
+		width: 47px;
+		height: 47px;
+		margin-bottom: 10px;
+		svg {
+			fill: #61a734;
+			width: 100%;
+		}
+	}
+	.row > div {
+		margin-bottom: 25px;
+	}
+
+	.works__col {
+		min-height: 100%;
+		padding: 20px 0;
+		color: #333;
+		p {
+			margin: 20px 31px 30px;
+			text-align: center;
+		}
+	}
+	@media (max-width: 767px) {
+		.works__col {
+			flex-direction: column;
+			min-height: 300px;
+			padding: 20px 0;
+			color: #333;
+			p {
+				font-style: italic;
+				margin: 20px 31px 30px;
+				font-weight: 400;
+				line-height: 1.6;
+				font-size: 1rem;
+			}
+		}
+
+		.col--right {
+			min-height: 430px;
+		}
+	}
+	.bg-1,
+	.bg-2,
+	.bg-3 {
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	.bg-1 {
+		background-image: url("../images/2.jpeg");
+	}
+	.bg-2 {
+		background-image: url("../images/3.jpeg");
+	}
+	.bg-3 {
+		background-image: url("../images/4.jpeg");
+	}
+}
+
+.our-farm {
+	padding-bottom: 80px;
+	// .our-farm__top
+	background-color: #f2f2f2;
+	&__top {
+		padding-top: 75px;
+		color: #ffffff;
+		background-color: #61a734;
+		.col {
+			color: #111111;
+			& > div {
+				padding: 50px 20px !important;
+			}
+			h4 {
+				display: block;
+				text-transform: uppercase;
+				color: #61a734;
+				font-size: 1.25rem;
+				font-weight: 600;
+				margin-bottom: 15px;
+			}
+			p {
+				display: block;
+				margin: 0;
+			}
+		}
+	}
+
+	// .our-farm__bottom
+
+	&__bottom {
+		color: #111111;
+		.col div {
+			min-height: 239px;
+			background-size: cover;
+			background-position: 50% 50%;
+			background-repeat: no-repeat;
+		}
+		.our-farm_bg-1 {
+			background-image: url("../images/8.jpeg");
+		}
+		.our-farm_bg-2 {
+			background-image: url("../images/9.jpeg");
+		}
+		.our-farm_bg-3 {
+			background-image: url("../images/10.jpeg");
+		}
+		.our-farm_bg-4 {
+			background-image: url("../images/11.jpeg");
+		}
+	}
+}
+
+.happy-farmig {
+	// .happy-farmig__col
+
+	&__col {
+		display: flex;
+		align-items: center;
+	}
+
+	// .happy-farmig__left
+
+	&__left {
+		background-image: url("../images/13.jpeg");
+		background-position: 50% 50%;
+		width: 100%;
+		min-height: 630px;
+	}
+
+	// .happy-farmig__right
+
+	&__right {
+		background-color: #fff;
+		margin: 0px auto;
+	}
+	@media (max-width: 917px) {
+		&__left {
+			min-height: 530px;
+		}
+	}
+	@media (max-width: 768px) {
+		&__left {
+			min-height: 430px;
+		}
+	}
+}
+
+.organic-card {
+	background-color: #e3effb;
+	padding: 50px 0 80px 0;
+	@media (max-width: 768px) {
+		& {
+			padding: 30px 0 40px 0;
+		}
+	}
+}
+
+.of-organic-food {
+	// .happy-farmig__col
+
+	&__col {
+		display: flex;
+		align-items: center;
+		min-height: 630px;
+	}
+
+	// .happy-farmig__left
+
+	&__left {
+		background-color: #fff;
+		margin: 0px auto;
+	}
+
+	// .happy-farmig__right
+
+	&__right {
+		background-image: url("../images/12.jpeg");
+		background-position: 50% 50%;
+		width: 100%;
+		min-height: 630px;
+	}
+}
+
+.organic-map {
+	.map-container {
+		overflow: hidden;
+		padding-bottom: 56.25%;
+		position: relative;
+		height: 0;
+	}
+	.map-container iframe {
+		left: 0;
+		top: 0;
+		height: 100%;
+		width: 100%;
+		position: absolute;
+	}
+
+	&__col {
+		padding: 0 !important;
+	}
+
+	// .happy-farmig__right
+
+	&__right {
+		position: relative;
+		background-image: url(https://images01.nicepage.io/f9/95/f995ba228bb486b955ffd8ee53ecbec9.jpeg);
+		width: 100%;
+		height: 100%;
+		background-position: 50% 50%;
+	}
+}
+
+.footer {
+	color: #ffffff;
+	background-color: #333333;
+	font-weight: 400;
+	line-height: 1.6;
+	font-size: 0.875rem;
+	// .footer__top
+
+	&__top {
+		padding: 40px 10px;
+		font-size: 2rem;
+		a {
+			display: inline-block;
+			margin: 0 10px;
+			color: #fff;
+			transition: color 0.3s;
+			&:hover {
+				color: #61a734;
+			}
+		}
+	}
+
+	// .footer__bottom
+
+	&__bottom {
+		padding: 40px 10px;
+		.u-link {
+			color: #ffbd99;
+			text-decoration: underline;
+			transition: all 0.3s;
+			margin: 0 5px;
+			&:hover {
+				text-decoration: none;
+				color: #a1a1a1;
+			}
+		}
+	}
+	@media (max-width: 390px) {
+		&__top {
+			padding: 20px 10px;
+		}
+		&__bottom {
+			padding: 20px 10px;
+			flex-direction: column !important;
+			align-items: center;
+		}
+	}
+}
+
+.back-to-top {
+	position: fixed;
+	bottom: 25px;
+	right: 25px;
+	display: none;
+}
